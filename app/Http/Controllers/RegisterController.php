@@ -19,8 +19,8 @@ class RegisterController extends Controller
         $request->request->add(['username' => Str::slug($request->username)]);
 
         $this->validate($request, [
-            'name' => 'required|max:30',
-            'username' => 'required|unique:users|min:3|max:20',
+            'name' => 'required|max:30|not_in:editar-perfil',
+            'username' => 'required|unique:users|min:3|max:20|not_in:editar-perfil',
             'email' => 'required|unique:users|email|max:60',
             'password' => 'required | confirmed'
         ]);
