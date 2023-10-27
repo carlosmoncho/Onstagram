@@ -58,6 +58,8 @@
 
     <section class="container mx-auto mt-10">
         <h2 class="text-4xl text-center font-black my-10">Publicaciones</h2>
-        <x-listar-post :posts="$posts"/>
+        <x-listar-post :posts="$posts">
+            <p class="text-center">No hay ningun post</p>
+        </x-listar-post>
     </section>
 @endsection

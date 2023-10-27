@@ -11,6 +11,6 @@
             {{$posts->links()}}
         </div>
     @else
-        <p class="text-center">NO sigues aun a nadie</p>
+        {{$slot}}
     @endif
 </div>
