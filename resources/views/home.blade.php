@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section("titulo")
-    wenosdias
+    Página Pricipal
 @endsection
 
 @section("contenido")
-    <h2>conetnido variadete</h2>
+    <x-listar-post :posts="$posts"/>
 @endsection
