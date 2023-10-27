@@ -6,6 +6,7 @@
         @stack('scripts')
         @stack('styles')
         <title>Onstagram @yield('titulo')</title>
+        @livewireStyles
         @vite('resources/css/app.css')
     </head>
     <body>
@@ -52,5 +53,6 @@
             Onstagram - Todos los derechos reservados {{now()->year}}
         </footer>
         @yield('js')
+        @livewireScripts
     </body>
 </html>
