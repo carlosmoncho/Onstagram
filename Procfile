@@ -1,1 +1,1 @@
-web: cp .env.example .env && php artisan key:generate && heroku-php-apache2
+web: heroku-php-apache2 && cp .env.example .env && php artisan key:generate
